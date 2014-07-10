@@ -1,0 +1,18 @@
+DEPENDENCIES
+  cb-common
+    git: git@github.com:frkline/cb-common.git
+    revision: c0bdd7105a6e445a0c4b944150b0fe059ebe3973
+    tag: 0.1.0
+    rel: cookbook
+  cb-java
+    path: .
+    metadata: true
+
+GRAPH
+  cb-common (0.1.0)
+    ntp (~> 1.6.4)
+    timezone-ii (~> 0.2.0)
+  cb-java (0.1.0)
+    cb-common (~> 0.1.0)
+  ntp (1.6.4)
+  timezone-ii (0.2.0)

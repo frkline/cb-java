@@ -1,4 +1,4 @@
-# cb-common
+# cb-java
 
 Basic server building block configuring time and users.
 

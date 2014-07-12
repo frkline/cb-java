@@ -4,7 +4,7 @@ metadata
 
 cookbook 'cb-common',
          git: 'git@github.com:frkline/cb-common.git',
-         tag: '0.1.0',
+         branch: 'release-0.3.0',
          rel: 'cookbook'
 cookbook 'java_ext',
          git: 'git@github.com:frkline/java_ext.git',

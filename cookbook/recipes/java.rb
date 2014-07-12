@@ -19,15 +19,11 @@ directory '/usr/share/java' do
   mode '755'
 end
 remote_file '/usr/share/java/jna.jar' do
-  source node['java']['jna']['base_url'] +
-    '/' +
-    node['java']['jna']['jar_name']
+  source node['java']['jna']['url']
   checksum node['java']['jna']['sha256sum']
 end
 remote_file '/usr/share/java/jna-platform.jar' do
-  source node['java']['jna']['platform']['base_url'] +
-    '/' +
-    node['java']['jna']['platform']['jar_name']
+  source node['java']['jna']['platform']['url']
   checksum node['java']['jna']['platform']['sha256sum']
 end
 

@@ -21,10 +21,12 @@ end
 remote_file '/usr/share/java/jna.jar' do
   source node['java']['jna']['url']
   checksum node['java']['jna']['sha256sum']
+  mode '644'
 end
 remote_file '/usr/share/java/jna-platform.jar' do
   source node['java']['jna']['platform']['url']
   checksum node['java']['jna']['platform']['sha256sum']
+  mode '644'
 end
 
 # Include JCE unlimited strength cryptography policy files

@@ -7,12 +7,21 @@ DEPENDENCIES
   cb-java
     path: .
     metadata: true
+  java_ext
+    git: git@github.com:frkline/java_ext.git
+    revision: 73f1ffb9205c25d42e946dc944d01a5b9191c65c
+    tag: 0.1.1
 
 GRAPH
   cb-common (0.1.0)
     ntp (~> 1.6.4)
     timezone-ii (~> 0.2.0)
   cb-java (0.1.0)
-    cb-common (~> 0.1.0)
+    cb-common (= 0.1.0)
+    java (= 1.22.0)
+    java_ext (= 0.1.1)
+  java (1.22.0)
+  java_ext (0.1.1)
+    java (>= 0.0.0)
   ntp (1.6.4)
   timezone-ii (0.2.0)

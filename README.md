@@ -7,13 +7,17 @@ Basic server building block configuring time and users.
 
 For more information, visit [cb-java](https://github.com/frkline/cb-java)
 
-## Cookbook Features
+## Features
 
 - Installs Java 8
 - Installs [JNA](https://github.com/twall/jna)  
 - Installs [Java Cryptography Extension](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) unlimited strength jurisdiction policy files for Java 8
 
-## Configure the Cookbook
+## Supports
+
+- CentOS 6.5
+
+## Configure
 
 0. [Configure Your Environment](https://github.com/frkline/dev-setup/#configure-your-environment)
 1. Clone the Repository  
@@ -45,13 +49,13 @@ Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 > bundle exec vagrant up
 ```
 
-**Log in Once VM Started**
+**Connect to the VM**
 ```
 > cd cookbook
 > bundle exec vagrant ssh
 ```
 
-## Cookbook Development
+## Development
 
 Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 

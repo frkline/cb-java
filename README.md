@@ -19,26 +19,6 @@ For more information, visit [cb-java](https://github.com/frkline/cb-java)
 
 ## Configure
 
-0. [Configure Your Environment](https://github.com/frkline/dev-setup/#configure-your-environment)
-1. Clone the Repository  
-
-  ```
-  > git clone --recursive git@github.com:frkline/cb-java.git
-  ```  
-   
-2. Initialize the Cookbook's Dependencies  
-
-  ```
-  > cd cb-java/cookbook  
-  > bundle install
-  ```
-
-Note: Upon update of the Gemfile, update the Bundle:
-```
-> cd cookbook
-> bundle install
-```
-
 ## Usage
 
 Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
@@ -57,16 +37,37 @@ Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 
 ## Development
 
-Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
+0. [Configure Your Environment](https://github.com/frkline/dev-setup/#configure-your-environment)
+1. Clone the Repository  
 
-**Start Guard**  
-Guard will test, analyze, and lint the cookbook as changes are made by monitoring
-your local directory for changes. It will run ChefSpec, Foodcritic, Rubocop, and ServerSpec tests
-as required. For more information, see: https://github.com/test-kitchen/guard-kitchen.
-```
-> cd cookbook
-> bundle exec guard start
-```
+  ```
+  > git clone --recursive git@github.com:frkline/cb-java.git
+  ```  
+   
+2. Initialize the Cookbook's Dependencies  
+
+  ```
+  > cd cb-common/cookbook  
+  > bundle install
+  ```
+
+  Note: Upon update of the Gemfile, update the Bundle:
+  ```
+  > cd cookbook
+  > bundle install
+  ```  
+  
+3. Start Guard  
+
+  Guard will test, analyze, and lint the cookbook as changes are made by monitoring
+  your local directory for changes. It will run ChefSpec, Foodcritic, Rubocop, and ServerSpec tests
+  as required. For more information, see: https://github.com/test-kitchen/guard-kitchen.
+  ```
+  > cd cookbook
+  > bundle exec guard start
+  ```
+  
+### Development Tools
 
 **Run ChefSpec**  
 ChefSpec is a unit testing framework for testing Chef cookbooks. ChefSpec makes it easy to write examples and get fast feedback on cookbook changes without the need for virtual machines or cloud servers. For more information, see: https://github.com/sethvargo/chefspec.

@@ -48,7 +48,7 @@ Prerequisite: [Configure the Cookbook](#configure-the-cookbook)
 2. Initialize the Cookbook's Dependencies  
 
   ```
-  > cd cb-common/cookbook  
+  > cd cb-java/cookbook  
   > bundle install
   ```
 

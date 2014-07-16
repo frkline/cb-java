@@ -1,6 +1,6 @@
 # cb-java
 
-Basic server building block configuring time and users.
+Basic server building block configuring java.
 
 - SCM: https://github.com/frkline/cb-java
 - Build: 

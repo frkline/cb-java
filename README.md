@@ -12,6 +12,7 @@ For more information, visit [cb-java](https://github.com/frkline/cb-java)
 - Installs Java 8
 - Installs [JNA](https://github.com/twall/jna)  
 - Installs [Java Cryptography Extension](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html) unlimited strength jurisdiction policy files for Java 8
+- Installs [Maven 3](http://maven.apache.org/)
 
 ## Supports
 
